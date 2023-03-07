@@ -20,11 +20,11 @@ Feature: Baykar Uye Girisi Senaryolari
     Examples:
       | email                       | password       |
       | tayfundereli@outlook.com    | randompassword |
-      | tayfundereli123@outlook.com | Td9bask1997    |
+      | tayfundereli123@outlook.com | validpassword  |
 
   Scenario Outline:Basarili Login Islemi
     When Gecerli "<email>" "<password>" yazilir
     Then Basarili uye girisi yapildigi kontrol edilir
     Examples:
-      | email                    | password    |
-      | tayfundereli@outlook.com | Td9bask1997 |
+      | email                    | password      |
+      | tayfundereli@outlook.com | validpassword |
